@@ -12,10 +12,14 @@ class MyContainer extends StatelessWidget {
           width: 200,
           height: 200,
           color: Colors.white,
-          alignment: Alignment.center,
+          alignment: Alignment.bottomCenter,
+          padding: const EdgeInsets.symmetric(
+            horizontal: 30,
+            vertical: 15,
+          ),
           child: const Text(
             'Ángel Cruz',
-            style: TextStyle(color: Colors.black, fontSize: 30),
+            style: TextStyle(color: Colors.black, fontSize: 20),
           ),
         ),
       ),
