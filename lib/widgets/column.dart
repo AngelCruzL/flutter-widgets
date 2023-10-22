@@ -14,31 +14,32 @@ class MyColumn extends StatelessWidget {
         padding: const EdgeInsets.symmetric(
           vertical: 55,
         ),
-        child: Center(
-          child: Container(
-            color: Colors.grey,
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                const Text('HELLO'),
-                const Text(
-                  'WORLD',
-                  style: TextStyle(
-                    color: Colors.blue,
-                    fontSize: 25,
-                    fontWeight: FontWeight.bold,
-                  ),
+        child: Container(
+          color: Colors.grey,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              const Text('HELLO'),
+              const Text(
+                'WORLD',
+                style: TextStyle(
+                  color: Colors.blue,
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold,
                 ),
-                Container(
-                  height: 100,
-                  color: Colors.pinkAccent,
-                ),
-                Container(
-                  height: 100,
-                  color: Colors.blueAccent,
-                ),
-              ],
-            ),
+              ),
+              const Spacer(),
+              // const SizedBox(height: 20),
+              Container(
+                height: 100,
+                color: Colors.pinkAccent,
+              ),
+              // const SizedBox(height: 100),
+              Container(
+                height: 100,
+                color: Colors.blueAccent,
+              ),
+            ],
           ),
         ),
       ),
