@@ -10,14 +10,17 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
         home: Center(
       child: DefaultTextStyle(
         style: TextStyle(),
         child: Directionality(
           textDirection: TextDirection.ltr,
           child: Text(
-            "Hello from home widget",
+            "Hello from home widget\n"
+            "This is another line of text to see the ellipsis functionality",
+            maxLines: 5,
+            overflow: TextOverflow.ellipsis,
             style: TextStyle(fontSize: 50, color: Colors.deepOrangeAccent),
             textAlign: TextAlign.start,
           ),
