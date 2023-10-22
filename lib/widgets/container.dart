@@ -18,6 +18,16 @@ class MyContainer extends StatelessWidget {
               color: Colors.white,
               // borderRadius: BorderRadius.all(Radius.circular(100)),
               shape: BoxShape.circle,
+              gradient: const LinearGradient(
+                colors: [
+                  Colors.green,
+                  Colors.white,
+                  Colors.red,
+                ],
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                stops: [0.1, 0.66, 1],
+              ),
               boxShadow: [
                 BoxShadow(
                   color: Colors.black.withOpacity(.25),
