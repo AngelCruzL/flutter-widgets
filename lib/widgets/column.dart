@@ -17,27 +17,24 @@ class MyColumn extends StatelessWidget {
         child: Container(
           color: Colors.grey,
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              const Text('HELLO'),
-              const Text(
-                'WORLD',
-                style: TextStyle(
-                  color: Colors.blue,
-                  fontSize: 25,
-                  fontWeight: FontWeight.bold,
+              Expanded(
+                flex: 3,
+                child: Container(
+                  color: Colors.pinkAccent,
                 ),
               ),
-              const Spacer(),
-              // const SizedBox(height: 20),
-              Container(
-                height: 100,
-                color: Colors.pinkAccent,
+              Expanded(
+                flex: 3,
+                child: Container(
+                  height: 100,
+                  color: Colors.blueAccent,
+                ),
               ),
-              // const SizedBox(height: 100),
-              Container(
-                height: 100,
-                color: Colors.blueAccent,
+              Expanded(
+                child: Container(
+                  color: Colors.orangeAccent,
+                ),
               ),
             ],
           ),
