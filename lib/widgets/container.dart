@@ -11,11 +11,15 @@ class MyContainer extends StatelessWidget {
         child: Container(
           width: 200,
           height: 200,
-          color: Colors.white,
           alignment: Alignment.bottomCenter,
+          decoration: const BoxDecoration(
+            color: Colors.tealAccent,
+            // borderRadius: BorderRadius.all(Radius.circular(100)),
+            shape: BoxShape.circle,
+          ),
           padding: const EdgeInsets.symmetric(
             horizontal: 30,
-            vertical: 15,
+            vertical: 50,
           ),
           child: const Text(
             'Ángel Cruz',
